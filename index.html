@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href='./style.css'>
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="library">My library</div>
+        <div class="userInput">
+            <form class="userInput" id="userInput" onsubmit="refreshTable(myLibrary)">
+                <div class="book">
+                    <label for="bookname">Book</label>
+                    <input type="text" class="form" id="bookName">
+                </div>
+                <div class="author">
+                    <label for="bookauthor">Author</label>
+                    <input type="text" class="form" id="bookAuthor">
+                </div>
+                <div class="pages">
+                    <label for="bookpages"># of Pages</label>
+                    <input type="text" class="form" id="bookPages">
+                </div>
+                <div class="read">
+                    <label for="status">Status</label>
+                    <select name="status" id="status" class="form">
+                        <option value="Read">Read</option>
+                        <option value="Not read">Not read</option>
+                    </select>
+                </div>
+                <input type="submit" value="Add book" id = "submitButton" class="submitButton">
+            </form>
+        </div>
+        <div class="display">
+            <table class="bookDisplay" id="bookDisplay">
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th>Read/Not read</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src='./script.js'></script>
+</body>
+</html>
