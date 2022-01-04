@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.userInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 10px;
+    gap: 30px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+}
+
+.read {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitButton {
+    height: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+td, th {
+    text-align: left;
+    padding: 10px;
+}
+
+.toggleReadStatus {
+    margin: 10px;
+}
